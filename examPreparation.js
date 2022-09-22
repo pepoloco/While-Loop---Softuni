@@ -1,4 +1,4 @@
-function examPrep(input){
+function examPrep(input) {
 
     let badGradeCounter = 0;
     let index = 0;
@@ -11,15 +11,15 @@ function examPrep(input){
     let taskName = "";
     let booleanFlag = false;
 
-    while (command !== "Enough"){
+    while (command !== "Enough") {
         taskName = command;
         let tempGrade = Number(input[index]);
         index++;
         sum += tempGrade;
         countProblem++;
-        if (tempGrade <= 4.00){
+        if (tempGrade <= 4.00) {
             badGradeCounter++;
-            if (badGradeCounter === badGrades){
+            if (badGradeCounter === badGrades) {
                 booleanFlag = true
                 break;
             }
@@ -30,24 +30,24 @@ function examPrep(input){
     }
 
     let avgScore = sum / countProblem;
-    if(booleanFlag){
+    if (booleanFlag) {
         console.log(`You need a break, ${badGradeCounter} poor grades.`);
 
-    }else{
+    } else {
         console.log(`Average score: ${avgScore.toFixed(2)}`);
         console.log(`Number of problems: ${countProblem}`);
         console.log(`Last problem: ${taskName}`);
     }
-    
-    
+
+
 }
 examPrep(["3",
-"Money",
-"6",
-"Story",
-"4",
-"SpringTime",
-"5",
-"Bus",
-"6",
-"Enough"]);
+    "Money",
+    "6",
+    "Story",
+    "4",
+    "SpringTime",
+    "5",
+    "Bus",
+    "6",
+    "Enough"]);

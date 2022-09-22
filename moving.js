@@ -15,7 +15,7 @@ function movingOut(input) {
 
     while (data != "Done") {
         totalFreeSpace -= data;
-        if (data === "Done"){
+        if (data === "Done") {
             console.log(`${totalFreeSpace} Cubic meters left.`);
             break;
         }
@@ -32,9 +32,9 @@ function movingOut(input) {
         console.log(`No more free space! You need ${result} Cubic meters more.`);
     }
 }
-movingOut(["10", 
-"1",
-"2",
-"4", 
-"6",
-"Done"]);
+movingOut(["10",
+    "1",
+    "2",
+    "4",
+    "6",
+    "Done"]);
