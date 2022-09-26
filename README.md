@@ -1,1 +1,1 @@
-# While-Loop---Softuni
+# While-Loop exercises from Softuni.
